@@ -1,0 +1,12 @@
+[submodule "FarmPlan-2.0-Backend"]
+	path = FarmPlan-2.0-Backend
+	url = https://github.com/ETCE-LAB/FarmPlan-2.0-Backend
+[submodule "FarmPlan-2.0-Frontend"]
+	path = FarmPlan-2.0-Frontend
+	url = https://github.com/ETCE-LAB/FarmPlan-2.0-Frontend
+[submodule "FarmPlan-2.0-Documentation"]
+	path = FarmPlan-2.0-Documentation
+	url = https://github.com/ETCE-LAB/FarmPlan-2.0-Documentation
+[submodule "FarmPlan-2.0-ML"]
+	path = FarmPlan-2.0-ML
+	url = https://github.com/ETCE-LAB/FarmPlan-2.0-ML
