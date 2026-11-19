@@ -1,0 +1,16 @@
+name: farmplan
+
+include:
+  - path: ./FarmPlan-2.0-Backend/infra/compose.yaml
+
+services:
+  frontend:
+    build:
+      context: ./FarmPlan-2.0-Frontend
+      dockerfile: ../deployment/frontend.Dockerfile
+    ports:
+      - "${FRONTEND_BIND_ADDRESS:-127.0.0.1}:${FRONTEND_PORT:-3000}:80"
+    depends_on:
+      api-gateway:
+        condition: service_healthy
+    restart: unless-stopped
